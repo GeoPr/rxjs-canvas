@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        outline: 0;
+        box-sizing: border-box;
+        color: #fff;
+      }
+      body {
+        min-height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        background: #232332;
+        display: grid;
+        place-content: center;
+        row-gap: 30px;
+      }
+      .canvas {
+        width: 700px;
+        height: 300px;
+        border: 1px solid magenta;
+      }
+      .my-button {
+        justify-self: start;
+      }
+      .options {
+        display: grid;
+        grid-template: auto / repeat(2, 1fr);
+        column-gap: 30px;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" class="canvas"></canvas>
+    <div class="options">
+      <div class="input-field">
+        <input type="color" id="color" />
+      </div>
+      <div class="range-field">
+        <input type="range" id="range" id="color" min="1" max="4" value="2" />
+      </div>
+    </div>
+    <button class="waves-effect waves-light btn my-button" id="button">
+      Clear
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
